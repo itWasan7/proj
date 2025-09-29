@@ -54,6 +54,10 @@ struct congratulations: View {
 
                 Spacer()
 
+                
+                
+                
+                
                 Text("SKIP")
                     .font(.headline)
                     .foregroundColor(Color.blue)
@@ -76,7 +80,7 @@ struct congratulations: View {
                     Text("🎉")
                         .font(.system(size: 56))
 
-                    Text("Congratulations!!")
+                    Text("Congratulations!")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.blue)
