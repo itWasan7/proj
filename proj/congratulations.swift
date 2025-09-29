@@ -77,7 +77,7 @@ struct congratulations: View {
                     .ignoresSafeArea()
 
                 VStack(spacing: 18) {
-                    Text("🎉")
+                    Text("🎉1")
                         .font(.system(size: 56))
 
                     Text("Congratulations!")
