@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00F97BC62E929CE10041B38A /* main page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F97BC52E929CD50041B38A /* main page.swift */; };
 		602AD57A2E8C0405002FA893 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 602AD5792E8C0405002FA893 /* ConfettiSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00F97BC52E929CD50041B38A /* main page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "main page.swift"; sourceTree = "<group>"; };
 		602AD5142E896948002FA893 /* proj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -39,6 +41,7 @@
 			children = (
 				602AD5162E896948002FA893 /* proj */,
 				602AD5152E896948002FA893 /* Products */,
+				00F97BC52E929CD50041B38A /* main page.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F97BC62E929CE10041B38A /* main page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
