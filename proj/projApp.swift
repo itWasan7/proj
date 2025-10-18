@@ -11,7 +11,10 @@ import SwiftUI
 struct projApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          //  ContentView()
+            
+            
+            main_page()
         }
     }
 }

@@ -10,6 +10,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Binding var isPresente: Bool
     var body: some View {
         ZStack {
             
@@ -43,6 +44,7 @@ struct ContentView: View {
                     // زر Done
                     Button(action: {
                         print("Done tapped")
+                        isPresente = false
                     }) {
                         Text("Done")
                             .frame(maxWidth: 100, maxHeight: 7)
@@ -65,7 +67,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(isPresente: .constant(true))
     }
 }
 

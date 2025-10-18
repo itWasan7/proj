@@ -9,6 +9,8 @@ import ConfettiSwiftUI
 struct TopStepsView: View {
     @State private var counter = 0
     @State private var isActive = true
+    @Binding var isPresented: Bool
+   
     var body: some View {
         
         ZStack {
@@ -30,6 +32,9 @@ struct TopStepsView: View {
                 
                 Button(action: {
                     // اكشن الزر
+                    isPresented = false
+                    
+                    //show = false
                 }) {
                     Text("Continue")
                         .font(.headline)
@@ -38,10 +43,12 @@ struct TopStepsView: View {
                         .padding()
                         .background(Color.babyBlue)
                         .cornerRadius(5)
+                        
                 }
                 .padding(.horizontal, 24)
                 Button(action: {
                     isActive = false
+                    
                 }) {
                     Text("SKIP")
                         .font(.system(size: 18, weight: .bold))
@@ -75,8 +82,10 @@ struct TopStepsView: View {
 }
 
 struct TopStepsView_Previews: PreviewProvider {
+    
+
     static var previews: some View {
-        TopStepsView()
+        TopStepsView(isPresented: .constant(true))
     }
 }
 
